@@ -14,9 +14,9 @@ client.on('ready', () => {
 
 client.on('message', message => {
 
-    if (message.content === concat(prefix, 'ping')) {
+    if (message.content === prefix + 'ping') {
 
-       message.reply('pong');
+       message.reply('pong!');
 
        }
 
