@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
- 
+var prefix = "!";
 
 client.on('ready', () => {
 
@@ -14,7 +14,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
 
-    if (message.content === 'ping') {
+    if (message.content === concat(prefix, 'ping')) {
 
        message.reply('pong');
 
